@@ -25,7 +25,7 @@ void applyPasswordToFile(char* path, char* newPath, const char* password, Operat
 
     input.open(path, ios::binary);
 
-    if (input.is_open()) {
+    if (!input.is_open()) {
         cout << "The input file can't be opened.";
         exit(0);
     }
