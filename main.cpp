@@ -37,7 +37,7 @@ void applyPasswordToFile(char* path, char* newPath, const char* password, Operat
             buffer[i] = (char)newValue;
         }
 
-        output.write(buffer, (int)pwdLen);
+        output.write(buffer, (int)bytesRead);
     }
 
     input.close();
